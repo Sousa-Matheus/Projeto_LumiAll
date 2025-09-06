@@ -4,6 +4,10 @@ import numpy as np
 import plotly.express as px
 import datetime
 
+data = pd.read_csv("https://lumialldash.blob.core.windows.net/lumiall-data/data/data.csv")
+
+colaboradores = data['Colaborador'].unique().tolist()
+
 st.set_page_config(page_title="LumiAll Dashboard", layout="wide")
 
 with open("styles.css") as f:
@@ -12,11 +16,20 @@ with open("styles.css") as f:
 with st.sidebar:
     st.image("https://lumialldash.blob.core.windows.net/lumiall-data/icons/logo_lumiAll.png", width=180)
     st.title("Menu")
-    nome = st.selectbox("Selecione o colaborador:", ["João Silva", "Maria Oliveira", "Carlos Souza"])
+    nome = st.selectbox("Selecione o colaborador:", colaboradores)
     periodo = st.date_input(
     "Selecione o intervalo:",
     [datetime.date.today() - datetime.timedelta(days=7), datetime.date.today()]
 )
+    
+media_duracao = data.loc[(data['Colaborador'] == nome) & (data['Concluido'] == 'sim'), 'Duracao_horas'].mean()
+
+atividades = data.loc[data['Colaborador'] == nome, 'Atividade'].count()
+
+atividades_concluidas = data.loc[(data['Colaborador'] == nome) & (data['Concluido'] == 'sim'), 'Atividade'].count()
+
+reuniao = data.loc[(data['Colaborador'] == nome) & (data['Tipo'] == 'Reunião'), 'Atividade'].count()
+
 
 with st.container():
 
@@ -27,16 +40,16 @@ col5, col6 = st.columns([1, 1], border=True)
 col7, col8 = st.columns([2, 1], border=True)
 
 with col1:
-    st.metric("Tarefas Concluídas", "15", "+10%")
+    st.metric("Tarefas", atividades, "+10%")
 
 with col2:
-    st.metric("Média Tempo", "3h", "-5%")
+    st.metric("Média Tempo", f"{media_duracao}h", "-5%")
 
 with col3:
-    st.metric("Projetos Ativos", "5", "+1")
+    st.metric("Tarefas Concluídas", atividades_concluidas, "+1")
 
 with col4:
-    st.metric("Reuniões", "3", "+3%")
+    st.metric("Reuniões", reuniao, "+3%")
 
 with col5:
     st.subheader("Desempenho ao Longo do Tempo")

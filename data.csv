@@ -1,0 +1,26 @@
+Colaborador,Atividade,Concluido,Inicio,Fim,Tipo,Duracao_horas
+João Silva,Fazer relatório,não,2025-09-02 16:00:00,2025-09-04 18:00:00,Projeto,50.0
+João Silva,Gerenciar equipe,não,2025-08-27 12:00:00,2025-08-29 13:00:00,Tarefa,49.0
+João Silva,Manutenção de sistema,não,2025-08-29 09:00:00,2025-08-30 15:00:00,Reunião,30.0
+João Silva,Apresentar resultados,sim,2025-08-30 08:00:00,2025-08-30 14:00:00,Tarefa,6.0
+João Silva,Gerenciar equipe,sim,2025-08-24 13:00:00,2025-08-24 16:00:00,Tarefa,3.0
+João Silva,Fazer relatório,não,2025-08-25 13:00:00,2025-08-25 14:00:00,Reunião,1.0
+João Silva,Desenvolver software,sim,2025-08-31 17:00:00,2025-08-31 19:00:00,Tarefa,2.0
+João Silva,Atender clientes,sim,2025-09-01 12:00:00,2025-09-04 14:00:00,Projeto,74.0
+Maria Oliveira,Atender clientes,não,2025-08-25 10:00:00,2025-08-27 14:00:00,Tarefa,52.0
+Maria Oliveira,Analisar dados,sim,2025-08-25 15:00:00,2025-08-26 19:00:00,Reunião,28.0
+Maria Oliveira,Planejar sprint,sim,2025-08-29 14:00:00,2025-08-31 18:00:00,Projeto,52.0
+Maria Oliveira,Atender clientes,não,2025-08-27 16:00:00,2025-08-27 19:00:00,Projeto,3.0
+Maria Oliveira,Planejar sprint,sim,2025-08-23 14:00:00,2025-08-26 19:00:00,Projeto,77.0
+Maria Oliveira,Apresentar resultados,não,2025-08-29 09:00:00,2025-09-01 12:00:00,Tarefa,75.0
+Maria Oliveira,Gerenciar equipe,sim,2025-08-31 11:00:00,2025-09-02 13:00:00,Projeto,50.0
+Maria Oliveira,Atender clientes,não,2025-08-31 16:00:00,2025-09-02 17:00:00,Projeto,49.0
+Maria Oliveira,Analisar dados,não,2025-09-02 11:00:00,2025-09-04 16:00:00,Reunião,53.0
+Maria Oliveira,Revisar código,sim,2025-08-29 16:00:00,2025-09-01 20:00:00,Projeto,76.0
+Carlos Souza,Organizar arquivos,não,2025-08-26 09:00:00,2025-08-27 12:00:00,Projeto,27.0
+Carlos Souza,Apresentar resultados,não,2025-08-30 18:00:00,2025-09-03 00:00:00,Tarefa,78.0
+Carlos Souza,Gerenciar equipe,sim,2025-08-25 15:00:00,2025-08-26 17:00:00,Reunião,26.0
+Carlos Souza,Apresentar resultados,não,2025-08-26 13:00:00,2025-08-27 18:00:00,Tarefa,29.0
+Carlos Souza,Treinamento interno,sim,2025-08-24 10:00:00,2025-08-26 12:00:00,Projeto,50.0
+Carlos Souza,Suporte técnico,não,2025-08-24 18:00:00,2025-08-27 20:00:00,Tarefa,74.0
+Carlos Souza,Organizar arquivos,não,2025-08-23 14:00:00,2025-08-23 15:00:00,Reunião,1.0
