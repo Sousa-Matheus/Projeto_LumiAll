@@ -4,13 +4,13 @@ import numpy as np
 import plotly.express as px
 import datetime
 
-st.set_page_config(page_title="Lumina Dashboard", layout="wide")
+st.set_page_config(page_title="LumiAll Dashboard", layout="wide")
 
 with open("styles.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 with st.sidebar:
-    st.image("C:/Users/Mathw/Downloads/pngegg.png", width=100)
+    st.image("C:/Users/Mathw/Documents/Github/Projeto_Lumiall/icons/logo_lumiAll.png", width=180)
     st.title("Menu")
     nome = st.selectbox("Selecione o colaborador:", ["João Silva", "Maria Oliveira", "Carlos Souza"])
     periodo = st.date_input(
@@ -27,10 +27,10 @@ col5, col6 = st.columns([1, 1], border=True)
 col7, col8 = st.columns([2, 1], border=True)
 
 with col1:
-    st.metric("Tarefas Concluídas", "8", "+10%")
+    st.metric("Tarefas Concluídas", "15", "+10%")
 
 with col2:
-    st.metric("Média Tempo", "6h", "-5%")
+    st.metric("Média Tempo", "3h", "-5%")
 
 with col3:
     st.metric("Projetos Ativos", "5", "+1")
@@ -40,8 +40,8 @@ with col4:
 
 with col5:
     st.subheader("Desempenho ao Longo do Tempo")
-    dates = pd.date_range(start="2023-01-01", periods=30)
-    performance = np.random.randint(50, 100, size=30)
+    dates = pd.date_range(start=periodo[0], periods=30)
+    performance = np.random.randint(1, 8, size=30)
     df_time = pd.DataFrame({"Data": dates, "Desempenho": performance})
     fig_time = px.line(df_time, x="Data", y="Desempenho", title="Desempenho Diário")
     st.plotly_chart(fig_time, use_container_width=True)
@@ -71,7 +71,7 @@ with col7:
     subcol1, subcol2 = st.columns([1, 5])
 
     with subcol1:
-        st.image("C:/Users/Mathw/Projeto_Lumina/icons/heart.png", width=25)
+        st.image("C:/Users/Mathw/Documents/Github/Projeto_Lumiall/icons/heart.png", width=25)
     
     with subcol2:
         st.subheader("Bem-estar")
@@ -82,12 +82,13 @@ with col7:
         st.metric("Nível de Estresse", "Baixo")
 
     with ssubcol2:
-        st.metric("Feedback do colaborador", "😄")
+        st.metric("Feedback do colaborador", "😄 😄 🙁 😄")
 
 with col8:
     subcol3, subcol4 = st.columns([1, 5])
     with subcol3:
-        st.image("C:/Users/Mathw/Projeto_Lumina/icons/autism_mind.png", width=25)
+        st.image("C:/Users/Mathw/Documents/Github/Projeto_Lumiall/icons/autism_mind.png", width=25)
     with subcol4:
         st.subheader("Insights Rápidos")
+        st.write("O colaborador manteve consistencia nas ultimas 4 semanas.")
     
