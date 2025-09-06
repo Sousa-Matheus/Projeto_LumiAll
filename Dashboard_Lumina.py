@@ -4,7 +4,7 @@ import numpy as np
 import plotly.express as px
 import datetime
 
-st.set_page_config(page_title="LumiAll Dashboard", layout="wide")
+st.set_page_config(page_title="LumiAll Dashboard", layout="wide", theme="light")
 
 with open("styles.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
