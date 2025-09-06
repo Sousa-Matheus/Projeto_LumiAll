@@ -1,0 +1,122 @@
+/* col1, col2 = st.columns([3, 1], border=True) */
+.st-emotion-cache-1rxjdyh {
+    width: calc(75% - 1rem);
+    flex: 1 1 calc(75% - 1rem);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    padding: calc(-1px + 1rem);
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    background-color: rgba(143, 142, 142, 0.2);
+}
+
+/* col3, col4, col5, col6 = st.columns(4, border=True) */
+.st-emotion-cache-zwu6m {
+    width: calc(25% - 1rem);
+    flex: 1 1 calc(25% - 1rem);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    padding: calc(-1px + 1rem);
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    background-color: rgba(143, 142, 142, 0.2);
+}
+
+.st-emotion-cache-14gnnu {
+    width: calc(50% - 1rem);
+    flex: 1 1 calc(50% - 1rem);
+    border: 1px solid rgba(49, 51, 63, 0.2);
+    border-radius: 0.5rem;
+    padding: calc(-1px + 1rem);
+     box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    background-color: rgba(143, 142, 142, 0.2);
+}
+
+/* col7, col8 = st.columns([2, 1], border=True) */
+.st-emotion-cache-xn1dwi {
+    width: calc(66.6667% - 1rem);
+    flex: 1 1 calc(66.6667% - 1rem);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    padding: calc(-1px + 1rem);
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    background-color: rgba(143, 142, 142, 0.2);
+}
+
+/* col9, col10 = st.columns([2, 1], border=True) */
+.st-emotion-cache-18zx1fb {
+    width: calc(33.3333% - 1rem);
+    flex: 1 1 calc(33.3333% - 1rem);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    padding: calc(-1px + 1rem);
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    background-color: rgba(143, 142, 142, 0.2);
+}
+
+.st-emotion-cache-xn1dwi {
+    width: calc(66.6667% - 1rem);
+    flex: 1 1 calc(66.6667% - 1rem);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    padding: calc(-1px + 1rem);
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    background-color: rgba(143, 142, 142, 0.2);
+}
+
+.st-emotion-cache-18zx1fb {
+    width: calc(33.3333% - 1rem);
+    flex: 1 1 calc(33.3333% - 1rem);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    padding: calc(-1px + 1rem);
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    background-color: rgba(143, 142, 142, 0.2);
+}
+
+/* estilo geral da página */
+.st-emotion-cache-6qob1r {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: overlay;
+    background-color: rgba(71, 71, 71, 0.2);
+}
+
+/* h1 estilizado */
+.st-emotion-cache-16tyu1 h1 {
+    margin-top: -50px;
+    font-size: 2.75rem;
+    font-weight: 700;
+    padding: 1.25rem 0px 1rem;
+    background-color: rgba(143, 142, 142, 0.2);
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.st-emotion-cache-7czcpc {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    margin-left: 5px;
+    width: auto;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+}
+
+.st-emotion-cache-1dvmtd8 {
+    margin-top: 18px;
+    display: flex;
+    flex-flow: wrap;
+    row-gap: 1rem;
+    max-width: 100%;
+    width: fit-content;
+}
+
+.st-emotion-cache-16tyu1 h3 {
+    margin-left: -10px;
+    font-size: 1.75rem;
+    padding: 0.75rem 0px 1rem;
+}
