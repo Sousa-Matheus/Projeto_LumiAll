@@ -10,7 +10,7 @@ with open("styles.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 with st.sidebar:
-    st.image("C:/Users/Mathw/Documents/Github/Projeto_Lumiall/icons/logo_lumiAll.png", width=180)
+    st.image("https://lumialldash.blob.core.windows.net/lumiall-data/icons/logo_lumiAll.png", width=180)
     st.title("Menu")
     nome = st.selectbox("Selecione o colaborador:", ["João Silva", "Maria Oliveira", "Carlos Souza"])
     periodo = st.date_input(
@@ -71,7 +71,7 @@ with col7:
     subcol1, subcol2 = st.columns([1, 5])
 
     with subcol1:
-        st.image("C:/Users/Mathw/Documents/Github/Projeto_Lumiall/icons/heart.png", width=25)
+        st.image("https://lumialldash.blob.core.windows.net/lumiall-data/icons/heart.png", width=25)
     
     with subcol2:
         st.subheader("Bem-estar")
@@ -87,7 +87,7 @@ with col7:
 with col8:
     subcol3, subcol4 = st.columns([1, 5])
     with subcol3:
-        st.image("C:/Users/Mathw/Documents/Github/Projeto_Lumiall/icons/autism_mind.png", width=25)
+        st.image("https://lumialldash.blob.core.windows.net/lumiall-data/icons/autism_mind.png", width=25)
     with subcol4:
         st.subheader("Insights Rápidos")
         st.write("O colaborador manteve consistencia nas ultimas 4 semanas.")
