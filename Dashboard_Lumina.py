@@ -90,5 +90,5 @@ with col8:
         st.image("https://lumialldash.blob.core.windows.net/lumiall-data/icons/autism_mind.png", width=25)
     with subcol4:
         st.subheader("Insights Rápidos")
-        st.write("O colaborador manteve consistencia nas ultimas 4 semanas.")
+        st.write("O colaborador manteve consistêcia nas ultimas 4 semanas.")
     
