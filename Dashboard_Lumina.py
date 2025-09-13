@@ -14,7 +14,7 @@ with open("styles.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 with st.sidebar:
-    st.image("https://lumialldash.blob.core.windows.net/lumiall-data/icons/logo_lumiAll.png", width=180)
+    st.image("https://lumialldash.blob.core.windows.net/lumiall-data/icons/logo_LuminAll.png", width=180)
     st.title("Menu")
     nome = st.selectbox("Selecione o colaborador:", colaboradores)
     periodo = st.date_input(
@@ -30,6 +30,10 @@ atividades_concluidas = data.loc[(data['Colaborador'] == nome) & (data['Concluid
 
 reuniao = data.loc[(data['Colaborador'] == nome) & (data['Tipo'] == 'Reunião'), 'Atividade'].count()
 
+feedback = {"João Silva": ["😄", "😄", "🙁", "😄"],
+            "Maria Oliveira": ["😄", "😄", "😄", "😄"],
+            "Carlos Souza": ["🙁", "😄", "🙁", "😄"]
+}
 
 with st.container():
 
